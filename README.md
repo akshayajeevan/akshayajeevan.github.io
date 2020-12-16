@@ -1,72 +1,9 @@
-My Résumé
+My Profile
 ---------
 
-This is my resume where I will be updating regularly to have all the information upto-date.
+This is my profile where I will be updating regularly to have all the information upto-date.
 
-The resume template is forked and modified from awesome [universal-resume](https://github.com/WebPraktikos/universal-resume)
-
-How to run it
----------
-
-Navigate to the base directory:
-
-```
-cd my-resume
-```
-
-Install the dependencies:
-
-```
-npm install
-```
-
-Start the development server:
-
-```
-npm run serve
-```
-
-Only generate CSS that is used on the page which results in a much smaller file size:
-
-```
-npm run build
-```
-
-Starting Point
----------
-
-`docs/index.html` is the main content file. By copying HTML: add pages, sections, subsection, and other parts.
-
-`npm run build` will make the **docs** directory ready.
-
-Also, with additionally running `git add docs/styles.css -f` and committing changes, it’s ready for push to GitHub and integration with GitHub Pages. GitHub Pages are free for  public repositories. Under your repository name, not profile, click “Settings” and enable GitHub Pages by navigating to: `Options → GitHub Pages → Source → /docs`.
-
-Custom CSS
----------
-
-Code from `tailwind.config.js` and `tailwind.css` transpiles to `docs/style.css`.
-
-Here is the default tailwind config: [defaultConfig.stub.js](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js), and here’s the additional information from the Tailwind documentation: [theme](https://tailwindcss.com/docs/theme/#app).
-
-If you want to change CSS in a classical way, add a class to the HTML element and write the CSS inside `tailwind.css`.
-
-Balanced Columns
----------
-
-Removing `col-fill-auto` class will make both columns equally tall. Moreover, removing `md:h-letter` and `md:h-letter-col` classes will eliminate fixed proportions of the letter or A4 page — thereby removing unnecessary vertical space when displaying short columns.
-
-A4 Size Variant
----------
-
-Change the default (letter) size to A4:
-
-**1.** Inside `docs/index.html`, replace every `-letter` with `-a4`.
-
-**2.** Inside `tailwind.config.js`, uncomment code block below `/* For A4 size */` and then comment code block below `/* For Letter size */`
-
-**3.** Inside `tailwind.css`, comment code below `/* For Letter size */` and uncomment code below `/* For A4 size */`
-
-**Important:** Too much content on one page will break the page in the form of additional columns.
+The template is forked and modified from awesome [universal-resume](https://github.com/WebPraktikos/universal-resume)
 
 Printing
 ---------
